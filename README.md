@@ -1,3 +1,5 @@
+<b>Trillo: Hotel Booking App</b>
+
 Some simple design where I practice web's important foundation, 
 consists:  
 
