@@ -3,8 +3,17 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @include medium {
+        display: flex;
+        margin: 0;
+    }
+
     &__item {
         position: relative;
+
+        @include medium {
+            flex: 1;
+        }
 
         &::before {
             content: '';
@@ -23,6 +32,10 @@
 
         &:not(:last-child) {
             margin-bottom: .5rem;
+
+            @include medium {
+                margin: 0;
+            }
         }
 
         &:hover::before,
@@ -50,6 +63,16 @@
         align-items: center;
         position: relative;
         z-index: 1;
+
+        @include medium {
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        @include small {
+            flex-direction: column;
+            padding: 1.5rem .5rem;
+        }
     }
 
     &__icon {
@@ -57,5 +80,12 @@
         width: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+
+        @include small {
+            margin-right: 0;
+            margin-bottom: .7rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 }

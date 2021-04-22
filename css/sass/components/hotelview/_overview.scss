@@ -2,18 +2,53 @@
     display: flex;
     align-items: center;
     border-bottom: $line;
+    position: relative;
+
+    @include smaller {
+        height: 8rem;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    @include smaller2 {
+        height: 8rem;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
 
     &__heading {
         font-size: 2.25rem;
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: .1rem;
-        padding: 1.5rem 3rem;
+        padding: 1.5rem 2rem;
+
+        @include small {
+            font-size: 1.8rem;
+            padding: 1.25rem 1rem;
+        }
+
+        @include smaller {
+            margin: 0;
+        }
+
+        @include smaller2 {
+            margin: 0;
+        }
     }
 
     &__stars {
         display: flex;
         margin-right: auto;
+
+        @include smaller {
+            margin-top: 1.8rem;
+        }
+
+        @include smaller2 {
+            margin-top: 1.8rem;
+        }
     }
 
     &__icon-star,
@@ -25,12 +60,38 @@
 
     &__icon-location {
         margin-right: .5rem;
+
+        @include smaller {
+            margin-left: .2rem;
+            order: 1;
+        }
+
+        @include smaller2 {
+            margin-left: .2rem;
+            order: 1;
+        }
     }
 
     &__location {
         font-size: 1.2rem;
         display: flex;
         align-items: center;
+
+        @include smaller {
+            align-self: flex-end;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 4.5rem 1.1rem;
+        }
+
+        @include smaller2 {
+            align-self: flex-end;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 4.5rem 1.1rem;
+        }
     }
 
     &__rating {
@@ -44,15 +105,55 @@
         justify-content: center;
         align-items: center;
 
+        @include small {
+            padding: 0 1.5rem;
+        }
+
+        @include smaller {
+            width: 15rem;
+        }
+
+        @include smaller2 {
+            width: 15rem;
+        }
+
+        @include mobile {
+            width: 10rem;
+        }
+
         &-average {
             font-size: 2.25rem;
             font-weight: 300;
             margin-bottom: -3px;
+
+            @include small {
+                font-size: 1.9rem;
+            }
+
+            @include smaller {
+                font-size: 2rem;
+            }
+
+            @include smaller2 {
+                font-size: 2rem;
+            }
         }
 
         &-count {
             font-size: .9rem;
             text-transform: uppercase;
+
+            @include small {
+                font-size: .9rem;
+            }
+
+            @include smaller {
+                font-size: 1rem;
+            }
+
+            @include smaller2 {
+                font-size: 1rem;
+            }
         }
     }
 }

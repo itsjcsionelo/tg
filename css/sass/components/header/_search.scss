@@ -3,6 +3,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    order: 2;
+
+    @include smallest {
+        flex: 1;
+    }
 
     &__input {
         background: c(grey-light-2);
@@ -13,15 +18,27 @@
         margin-right: -3.25rem;
         transition: all .2s;
 
+        @include smallest {
+            margin-right: 0;
+        }
+
         &:focus {
             outline: none;
             width: 100%;
             background: c(grey-light-3);
+
+            @include smallest {
+                width: 93%;
+            }
         }
     }
 
     &__button {
         border: none;
+
+        @include smallest {
+            margin-left: -3.5rem;
+        }
 
         &:focus {
             outline: none;

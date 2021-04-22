@@ -1,6 +1,8 @@
 body {
     background: $gradientBG;
     background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
 
     ::selection {
         background: c(primary);
@@ -14,9 +16,18 @@ body {
     margin: 8rem auto;
     background: c(grey-light-1);
     box-shadow: $shadow;
+
+    @include largest {
+        margin: 0;
+        max-width: 100%;
+    }
 }
 
 .content {
     display: flex;
     background: white;
+
+    @include medium {
+        flex-direction: column;
+    }
 }

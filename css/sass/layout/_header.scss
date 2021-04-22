@@ -5,4 +5,8 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: $line;
+
+    @include smallest {
+        flex-wrap: wrap;
+    }
 }

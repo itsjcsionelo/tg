@@ -1,3 +1,6 @@
+////////////////////////////////////////////
+//COLORS
+
 $colors: (primary: #eb2f64,
     primary-light: #FF3366,
     primary-dark: #BA265D,
@@ -22,7 +25,23 @@ $gradientBG: linear-gradient(to bottom right,
     c(primary-dark),
 );
 
+////////////////////////////////////////////
+//LAYOUT
+
 $shadow: 0 2rem 6rem c(shadow);
 $cardShadow: 0 2rem 5rem c(shadow-card);
 
 $line: solid .1rem c(grey-light-2);
+
+////////////////////////////////////////////
+//BREAKPOINTS
+
+$largest: 1200px;
+$large: 1100px;
+$medium: 900px;
+$small: 600px;
+$smaller: 400px;
+$smaller2: 440px;
+$smallest: 500px;
+
+$mobile: 360px;
