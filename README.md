@@ -3,9 +3,17 @@
 Some simple design where I practice web's important foundation, 
 consists:  
 
-✔ Flexbox<br>
-✔ SASS<br>
-✔ BEM Methodology<br>
-✔ 7-1 CSS Architecture<br>
-✔ Simple Animations/Transitions<br> 
-✔ Fully Responsive
+<table border="0">
+ <tr>
+    <td>✔ SASS</td>
+    <td>✔ Flexbox</td>
+ </tr>
+ <tr>
+    <td>✔ 7-1 CSS Architecture</td>
+    <td>✔ Simple Animations/Transitions</td>
+ </tr>
+ <tr>
+    <td>✔ BEM Methodology</td>
+    <td>✔ Fully Responsive</td>
+ </tr>
+</table>
