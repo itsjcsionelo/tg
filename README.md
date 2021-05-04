@@ -1,7 +1,6 @@
-<b>Trillo: Hotel Booking App</b>
+# Trillo: Hotel Booking App
 
-Some simple design where I practice web's important foundation, 
-consists:  
+#### Some simple design where I practice web's important foundation, consists:  
 
 <table border="0">
  <tr>
