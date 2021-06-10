@@ -8,6 +8,6 @@
     <td>✔ HoverEffect.js</td>
  </tr>
   <tr>
-    <th colspan="2">✔ Flexbox</th>
+    <th colspan="1">✔ Flexbox</th>
  </tr>
 </table>
