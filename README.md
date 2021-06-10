@@ -5,7 +5,11 @@
 <table border="0">
  <tr>
     <td>✔ GSAP</td>
-    <td>✔ HoverEffect.js</td>
+    <td>✔ Distortion Effect</td>
+ </tr>
+ <tr>
+    <td>✔ Landing Page</td>
+    <td>✔ Asymmetric Design</td>
  </tr>
   <tr>
     <th colspan="2">✔ Flexbox</th>
