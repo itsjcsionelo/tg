@@ -1,18 +1,13 @@
-# Trillo: Hotel Booking App
+# Toni & Guy
 
-#### Some simple design where I practice web's important foundation, consists:  
+#### Some simple design where I practice JS's Libraries, consists:  
 
 <table border="0">
  <tr>
-    <td>✔ SASS</td>
-    <td>✔ Flexbox</td>
+    <th colspan="2">✔ Flexbox</th>
  </tr>
  <tr>
-    <td>✔ 7-1 CSS Architecture</td>
-    <td>✔ Simple Animations/Transitions</td>
- </tr>
- <tr>
-    <td>✔ BEM Methodology</td>
-    <td>✔ Fully Responsive</td>
+    <td>✔ GSAP</td>
+    <td>✔ HoverEffect.js</td>
  </tr>
 </table>
