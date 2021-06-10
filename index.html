@@ -2,241 +2,186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-
-    <link rel="stylesheet" href="css/sass/main.css">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <title>Trillo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Toni & Guy</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+  <div class="wrapper">
 
-        <header class="header">
+    <!-- OVERLAY
+    =============================== -->
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
 
-            <img src="img/logo.png" alt="Trillo Logo" class="logo">
+    <!-- NAVBAR
+    =============================== -->
+    <nav class="navbar">
+      <div class="menu">
+        <ion-icon name="ios-menu"></ion-icon>
+      </div>
+      <div class="lang">eng</div>
+      <div class="search">
+        <ion-icon name="ios-search"></ion-icon>
+      </div>
+    </nav>
 
-            <form action="#" class="search">
-                <input type="text" class="search__input" placeholder="Search hotels">
-                <button class="search__button">
-                    <svg class="search__icon">
-                        <use xlink:href="img/sprite.svg#icon-magnifying-glass">
-                    </svg>
-                </button>
-            </form>
 
-            <nav class="user-nav">
-                <div class="user-nav__icon-box">
-                    <svg class="user-nav__icon">
-                        <use xlink:href="img/sprite.svg#icon-bookmark">
-                    </svg>
-                    <span class="user-nav__notification">7</span>
-                </div>
-
-                <div class="user-nav__icon-box">
-                    <svg class="user-nav__icon">
-                        <use xlink:href="img/sprite.svg#icon-chat">
-                    </svg>
-                    <span class="user-nav__notification">13</span>
-                </div>
-
-                <div class="user-nav__user">
-                    <img src="img/user.jpg" alt="User Profile" class="user-nav__user-photo">
-                    <span class="user-nav__user-name">Becca</span>
-                </div>
-            </nav>
-
-        </header>
-
-        <div class="content">
-            <nav class="sidebar">
-                <ul class="side-nav">
-
-                    <li class="side-nav__item side-nav__item--active">
-                        <a href="#" class="side-nav__link">
-                            <svg class="side-nav__icon">
-                                <use xlink:href="img/sprite.svg#icon-home">
-                            </svg>
-                            <span>Hotel</span>
-                        </a>
-                    </li>
-
-                    <li class="side-nav__item">
-                        <a href="#" class="side-nav__link">
-                            <svg class="side-nav__icon">
-                                <use xlink:href="img/sprite.svg#icon-aircraft-take-off">
-                            </svg>
-                            <span>Flight</span>
-                        </a>
-                    </li>
-
-                    <li class="side-nav__item">
-                        <a href="#" class="side-nav__link">
-                            <svg class="side-nav__icon">
-                                <use xlink:href="img/sprite.svg#icon-key">
-                            </svg>
-                            <span>Car Rental</span>
-                        </a>
-                    </li>
-
-                    <li class="side-nav__item">
-                        <a href="#" class="side-nav__link">
-                            <svg class="side-nav__icon">
-                                <use xlink:href="img/sprite.svg#icon-map">
-                            </svg>
-                            <span>Tours</span>
-                        </a>
-                    </li>
-
-                </ul>
-
-                <div class="legal">
-                    &copy; 2021 by Trillo. All rights reserved.
-                </div>
-            </nav>
-
-            <main class="hotel-view">
-                <div class="gallery">
-                    <figure class="gallery__item">
-                        <img src="img/hotel-1.jpg" alt="1st Hotel Photo" class="gallery__photo">
-                    </figure>
-                    <figure class="gallery__item">
-                        <img src="img/hotel-2.jpg" alt="2nd Hotel Photo" class="gallery__photo">
-                    </figure>
-                    <figure class="gallery__item">
-                        <img src="img/hotel-3.jpg" alt="3rd Hotel Photo" class="gallery__photo">
-                    </figure>
-                </div>
-
-                <div class="overview">
-
-                    <h1 class="overview__heading">Hotel Las Palmas</h1>
-
-                    <div class="overview__stars">
-                        <svg class="overview__icon-star">
-                            <use xlink:href="img/sprite.svg#icon-star">
-                        </svg>
-                        <svg class="overview__icon-star">
-                            <use xlink:href="img/sprite.svg#icon-star">
-                        </svg>
-                        <svg class="overview__icon-star">
-                            <use xlink:href="img/sprite.svg#icon-star">
-                        </svg>
-                        <svg class="overview__icon-star">
-                            <use xlink:href="img/sprite.svg#icon-star">
-                        </svg>
-                        <svg class="overview__icon-star">
-                            <use xlink:href="img/sprite.svg#icon-star">
-                        </svg>
-                    </div>
-
-                    <div class="overview__location">
-                        <svg class="overview__icon-location">
-                            <use xlink:href="img/sprite.svg#icon-location-pin">
-                        </svg>
-                        <button class="btn-inline">Albufeira, Portugal</button>
-                    </div>
-
-                    <div class="overview__rating">
-                        <div class="overview__rating-average">8.6</div>
-                        <div class="overview__rating-count">429 votes</div>
-                    </div>
-
-                </div>
-
-                <div class="detail">
-
-                    <div class="description">
-                        <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore, blanditiis incidunt sequi quisquam provident recusandae molestiae soluta alias est.
-                        </p>
-                        <p class="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit consequatur laboriosam, cum dolorem similique distinctio!
-                        </p>
-
-                        <ul class="list">
-                            <li class="list__item">Close to the beach</li>
-                            <li class="list__item">Breakfast included</li>
-                            <li class="list__item">Free airport shuttle</li>
-                            <li class="list__item">Free wifi in all rooms</li>
-                            <li class="list__item">Air conditioning</li>
-                            <li class="list__item">Pets allowed</li>
-                            <li class="list__item">We speak all languages</li>
-                            <li class="list__item">Perfect for families</li>
-                        </ul>
-
-                        <div class="recommend">
-                            Lucy and 3 other friends recommend this hotel.
-
-                            <div class="recommend__friends">
-                                <img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo">
-                                <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo">
-                                <img src="img/user-5.jpg" alt="Friend 3" class="recommend__photo">
-                                <img src="img/user-6.jpg" alt="Friend 4" class="recommend__photo">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="user-reviews">
-
-                        <figure class="review">
-                            <blockquote class="review__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit qui consequatur hic reprehenderit, totam nemo!
-                            </blockquote>
-                            <figcaption class="review__user">
-                                <img src="img/user-1.jpg" alt="User 1" class="review__photo">
-                                <div class="review__user-box">
-                                    <p class="review__user-name">Nick Smith</p>
-                                    <p class="review__user-date">
-                                        Feb. 23rd, 2021
-                                    </p>
-                                </div>
-                                <div class="review__rating">7.8</div>
-                            </figcaption>
-                        </figure>
-
-                        <figure class="review">
-                            <blockquote class="review__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam explicabo quas, necessitatibus ratione esse.
-                            </blockquote>
-                            <figcaption class="review__user">
-                                <img src="img/user-2.jpg" alt="User 2" class="review__photo">
-                                <div class="review__user-box">
-                                    <p class="review__user-name">Mary Thomas</p>
-                                    <p class="review__user-date">
-                                        Sept. 13th, 2021
-                                    </p>
-                                </div>
-                                <div class="review__rating">9.3</div>
-                            </figcaption>
-                        </figure>
-
-                        <button class="btn-inline">Show all <span>&rarr;</span></button>
-
-                    </div>
-
-                </div>
-
-                <div class="cta">
-                    <h2 class="cta__book-now">
-                        good news! we have 4 free rooms for your selected dates!
-                    </h2>
-                    <button class="btn">
-                        <span class="btn__visible">Book now</span>
-                        <span class="btn__invisible">Only 4 rooms left</span>
-                    </button>
-                </div>
-
-            </main>
-        </div>
-
+    <!-- SOCIAL MEDIA
+    =============================== -->
+    <div class="media">
+      <ul>
+        <li>facebook</li>
+        <li>instagram</li>
+        <li>twitter</li>
+      </ul>
     </div>
 
+
+    <!-- TEXT
+    =============================== -->
+    <div class="text">
+      <h1>
+        <span class="hidetext">toni&guy</span>
+      </h1>
+      <h2>duality</h2>
+      <h3>
+        <span class="hidetext">collection 2017 <br> duality</span>
+      </h3>
+      <p>
+        <span class="hidetext">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quis, delectus facere
+          neque sunt commodi quae
+          culpa dolores doloribus magnam?
+        </span>
+      </p>
+    </div>
+
+
+    <!-- SPONSOR
+    =============================== -->
+    <div class="sponsor">
+      <img src="./images/sponsor-logo.png" alt="">
+      <p>official sponsor</p>
+    </div>
+
+
+    <!-- DISTORTION
+    =============================== -->
+    <div class="distortion"></div>
+
+  </div>
+
+
+  <!-- icons -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <!-- three js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js" integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+  <!-- hover-effect js -->
+  <script src="./hover-effect.umd.js"></script>
+
+  <script>
+    new hoverEffect({
+      parent: document.querySelector('.distortion'),
+      intensity: 0.2,
+      image1: './images/01.png',
+      image2: './images/02.png',
+      displacementImage: './images/diss.png',
+      imagesRatio: 380 / 300
+    })
+
+    // NAVBAR
+    TweenMax.staggerFrom(".navbar div", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    }, 0.08);
+
+    // MEDIA
+    TweenMax.staggerFrom(".media ul li", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      x: "-20",
+      ease: Expo.easeInOut
+    }, 0.08);
+
+    // TEXT
+    TweenMax.from(".text h1 .hidetext", 1.5, {
+      delay: 1,
+      y: "100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".text h3 .hidetext", 1.5, {
+      delay: 1.2,
+      y: "100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".text p .hidetext", 1.5, {
+      delay: 1.3,
+      y: "100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".text h2", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      x: "-10000",
+      ease: Expo.easeInOut
+    });
+
+    // SPONSOR
+    TweenMax.from(".sponsor img", 1.5, {
+      delay: 1.5,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.from(".sponsor p", 1.5, {
+      delay: 1.6,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    });
+
+    // DISTORTION
+    TweenMax.from(".distortion", 1.5, {
+      delay: 2,
+      opacity: 0,
+      y: "20",
+      ease: Expo.easeInOut
+    });
+
+    // OVERLAY
+    TweenMax.to(".first", 1.5, {
+      delay: .5,
+      top: "-100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.to(".second", 1.5, {
+      delay: .7,
+      top: "-100%",
+      ease: Expo.easeInOut
+    });
+
+    TweenMax.to(".third", 1.5, {
+      delay: .9,
+      top: "-100%",
+      ease: Expo.easeInOut
+    });
+  </script>
 </body>
 
 </html>
