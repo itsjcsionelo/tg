@@ -4,10 +4,10 @@
 
 <table border="0">
  <tr>
-    <th colspan="2">✔ Flexbox</th>
- </tr>
- <tr>
     <td>✔ GSAP</td>
     <td>✔ HoverEffect.js</td>
+ </tr>
+  <tr>
+    <th colspan="2">✔ Flexbox</th>
  </tr>
 </table>
