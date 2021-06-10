@@ -9,7 +9,7 @@
  </tr>
  <tr>
     <td>✔ Landing Page</td>
-    <td>✔ Asymmetric Design</td>
+    <td>✔ Asymmetric UI</td>
  </tr>
   <tr>
     <th colspan="2">✔ Flexbox</th>
