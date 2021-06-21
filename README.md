@@ -12,7 +12,8 @@
     <td>✔ Asymmetric UI</td>
  </tr>
   <tr>
-    <th colspan="2">✔ Flexbox</th>
+    <td>🚫 Not Optimized for Mobile</td>
+    <td>✔ Flexbox</td>
  </tr>
 </table>
 
